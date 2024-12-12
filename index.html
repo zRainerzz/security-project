@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cryptage & Decrypt</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+</head>
+<body>
+    <div class="logo">
+        <img src="Johnson-removebg-preview.png" alt="Logo">
+    </div>
+    <div class="container">
+        <h1><i class="fas fa-lock"></i> Security Project <i class="fas fa-unlock"></i></h1>
+        <p>Encrypt or decrypt text and make Your conversation safe </p>
+        
+        <div class="input-group">
+            <label for="text"><i class="fas fa-file-alt"></i> Text:</label>
+            <textarea id="text" placeholder="Enter text to process..."></textarea>
+        </div>
+        
+        <div class="input-group">
+            <label for="key"><i class="fas fa-key"></i> Key:</label>
+            <input type="text" id="key" placeholder="Enter encryption/decryption key...">
+        </div>
+        
+        <div class="button-group">
+            <button id="encrypt"><i class="fas fa-lock"></i> Encrypt</button>
+            <button id="decrypt"><i class="fas fa-unlock"></i> Decrypt</button>
+        </div>
+        
+        <div class="result-group">
+            <label for="result"><i class="fas fa-code"></i> Result:</label>
+            <textarea id="result" readonly></textarea>
+        </div>
+        <footer>
+          <p>&copy; 2023 Developed by <a href="https://amennoomen.com/" target="_blank" rel="noopener noreferrer">Amen Allah Naamen & Hazem saidani</a></p>
+        </footer>
+    </div>
+    
+    <div id="loading" class="loading">
+        <i class="fas fa-cog fa-spin"></i>
+    </div>
+
+    <!-- Autoplay Sound -->
+    <audio id="background-audio" autoplay loop>
+        <source src="dark-mysterious-true-crime-music-loopable-235870.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+    </audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
