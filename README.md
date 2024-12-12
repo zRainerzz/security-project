@@ -2,6 +2,8 @@
 # Security Project
 
 This web application allows users to encrypt and decrypt text using various encryption methods. The tool offers a user-friendly interface to quickly perform encryption or decryption operations, ensuring a seamless and interactive experience.
+## The interface 
+![image](https://github.com/user-attachments/assets/887a0b43-c6c7-48ac-8615-d6fc21ae4480)
 
 ## Features
 - **Encryption & Decryption**: Encrypt and decrypt text using a variety of encryption methods.
@@ -47,6 +49,10 @@ security-project/
 - **Decryption**: After encryption, users can input the same key to decrypt the text back to its original form.
 - **Background Sound**: A background audio file (audio.mp3) plays automatically when the website is loaded, creating an immersive experience.
 - **Responsive Design**: The layout adjusts based on the screen size, ensuring a great experience across devices.
+## crypt & Decrypt methode 
+usin table de vigenaire : 
+![image](https://github.com/user-attachments/assets/1ffd11b5-b948-44b8-b667-e7a48affc977)
+
 
 ## Technologies Used
 - **HTML5**: Structure and content of the webpage.
