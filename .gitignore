@@ -1,2 +1,3 @@
 venv/
 Django/db.sqlite3
+Django/Django/__pycache__/
