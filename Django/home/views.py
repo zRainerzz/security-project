@@ -4,7 +4,7 @@ from django.http import HttpResponse
 # Create your views here.
 
 def home(request):
-    editors = {'name1':'Amen Allah Naamen', 'name2':'Hazem Saidani','name3': 'Ghaith Khedhri'}
+    editors = {'name1':'amen Allah Naamen', 'name2':'hazem Saidani','name3': 'ghaith Khedhri'}
     return render(request, 'home/index.html', editors)
 
 
