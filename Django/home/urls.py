@@ -3,5 +3,5 @@ from django.urls import path
 from . import views
 
 urlpatterns = [
-    path('', views.home, name='home'),  # This sets the home view as the root URL
+    path('', views.home, name='home_page'),  # This sets the home view as the root URL
 ]
