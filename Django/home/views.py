@@ -8,3 +8,5 @@ def home(request):
 
 
 
+def about(request):
+    return HttpResponse('About page not configured, Does it even matter?')
