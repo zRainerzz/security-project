@@ -22,5 +22,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('home.urls')),  # Include the URLs from the login app
     path('about/', include('home.urls')),
+    path('login/', include('login.urls')),
 ]
 
