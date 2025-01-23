@@ -1,3 +1,4 @@
+<!-- filepath: /c:/Users/lenovo/Desktop/security-project/Django/templates/home/index.html -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,10 +9,36 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
+    <style>
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: #333;
+            padding: 10px 20px;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            text-align: center;
+        }
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
 </head>
 <body>
-    <div class="logo">
-        <img src="Johnson-removebg-preview.png" alt="Logo">
+    <div class="navbar">
+        <div class="logo">
+            <img src="Johnson-removebg-preview.png" alt="Logo" style="height: 40px;">
+        </div>
+        <div class="nav-links">
+            <a href="/">Home</a>
+            <a href="/about">About</a>
+            <a href="/donation">Donation</a>
+        </div>
     </div>
     <div class="container">
         <h1><i class="fas fa-lock"></i> Security Project <i class="fas fa-unlock"></i></h1>
@@ -31,28 +58,6 @@
             <button id="encrypt"><i class="fas fa-lock"></i> Encrypt</button>
             <button id="decrypt"><i class="fas fa-unlock"></i> Decrypt</button>
         </div>
-        
-        <div class="result-group">
-            <label for="result"><i class="fas fa-code"></i> Result:</label>
-            <textarea id="result" readonly></textarea>
-        </div>
-        <footer>
-        <p>&copy; 2023 Developed by <a href="https://amennoomen.com/" target="_blank" rel="noopener noreferrer">{{name1|title}}</a><!--| to filter-->
-            <a href="https://hazemsaidani.com/" target="_blank" rel="noopener noreferrer">{{name2|title}}</a>
-            <a href="https://github.com/zRainerzz" target="_blank" rel="noopener noreferrer">{{name3|title}}</a></p>
-        </footer>
     </div>
-    
-    <div id="loading" class="loading">
-        <i class="fas fa-cog fa-spin"></i>
-    </div>
-
-    <!-- Autoplay Sound -->
-    <audio id="background-audio" autoplay loop>
-        <source src="dark-mysterious-true-crime-music-loopable-235870.mp3" type="audio/mpeg">
-        Your browser does not support the audio element.
-    </audio>
-
-    <script src="script.js"></script>
 </body>
 </html>
