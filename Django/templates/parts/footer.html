@@ -1,26 +1,35 @@
-
 <footer>
     <div class="footer-content">
-        <p>Original Programmers: <a href="https://amennoomen.com/" target="_blank">Amen Johnson</a> and Hazem Saidani</p>
+        <p>Original Programmers: <a href="https://amennoomen.com/" target="_blank">Amen Johnson</a> and <a href="https://hazemsaidani.tn">Hazem Saidani</a></p>
         <p>Improved by: <a href="https://github.com/zRainerzz" target="_blank">Ghaith Khedhri</a></p>
         <p>Roles: Amen Johnson and Hazem Saidani cooperated to make it, Ghaith Khedhri is progressing in improving it.</p>
     </div>
 </footer>
 <style>
     footer {
-        background-color: #333;
-        color: #fff;
-        padding: 20px 0;
+        background-color: #123524; /* Matches the container background */
+        color: #00FF00; /* Matches the text color */
+        padding: 10px 20px;
         text-align: center;
         position: fixed;
-        width: 100%;
-        bottom: 0;
+        width: 80%;
+        bottom: 20px;
+        left: 50%;
+        transform: translateX(-50%);
+        border-radius: 15px;
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        transition: all 0.3s ease;
+    }
+    footer:hover {
+        box-shadow: 0 12px 24px rgba(0, 0, 0, 0.4);
     }
     .footer-content a {
-        color: #007bff;
+        color: #F274B1; /* Matches the highlight color */
         text-decoration: none;
+        transition: color 0.3s ease;
     }
     .footer-content a:hover {
+        color: #7D1E4C; /* Matches the input border color */
         text-decoration: underline;
     }
 </style>
