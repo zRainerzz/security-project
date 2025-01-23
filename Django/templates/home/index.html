@@ -1,28 +1,22 @@
-
+<!-- filepath: /c:/Users/lenovo/Desktop/security-project/Django/templates/home/index.html -->
 {% extends "base.html" %}
 {% block content %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cryptage & Decrypt</title>
-    {%load static%}
-    <link rel="stylesheet" href="{% static 'css/style.css' %}">
-    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <link rel="shortcut icon" href="{% static 'favicon.ico' %}" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-
 </head>
 <body>
     
-    
-<style>
-    body {
-        font-family: 'Special Elite', cursive;
-        color: #fff;
-    }
-</style>
+  
     <div class="container">
         <h1><i class="fas fa-lock"></i> Security Project <i class="fas fa-unlock"></i></h1>
         <p>Encrypt or decrypt text and make Your conversation safe </p>
@@ -42,6 +36,7 @@
             <button id="decrypt"><i class="fas fa-unlock"></i> Decrypt</button>
         </div>
     </div>
+
+{% endblock %}
 </body>
 </html>
-{% endblock content %}

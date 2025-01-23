@@ -1,33 +1,39 @@
-{%load static%}
+
+{% load static %}
 <style>
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color: #333;
-    padding: 10px 20px;
-}
-.navbar a {
-    color: white;
-    text-decoration: none;
-    padding: 14px 20px;
-    text-align: center;
-}
-.navbar a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-
-
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        padding: 10px 20px;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000; /* Ensure the navbar is on top of other elements */
+    }
+    .navbar a {
+        color: white;
+        text-decoration: none;
+        padding: 14px 20px;
+        text-align: center;
+    }
+    .navbar a:hover {
+        background-color: #ddd;
+        color: black;
+    }
+    body {
+        padding-top: 60px; /* Add padding to avoid content being hidden behind the navbar */
+    }
 </style>
 <div class="navbar">
     <div class="logo">
-        <img src={% static "image\Johnson-removebg-preview.png" %} alt="Logo" style="height: 40px;">
+        <img src="{% static 'image/Johnson-removebg-preview.png' %}" alt="Logo" style="height: 40px;">
     </div>
     <div class="nav-links">
-        <a href="/">Home</a>
-        <a href="/about">About</a>
-        <a href="/donation">Donation</a>
+        <span><a href="{%url = 'home_page'%}">Home</a></span>
+        <span><a href="{%url = 'about'%}">About</a></span><!--Takes the name from urls.py-->
+        <span><a href="{%url = 'login_page'%}">Donation</a></span>
     </div>
 </div>
