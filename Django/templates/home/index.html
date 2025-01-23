@@ -1,4 +1,6 @@
 <!-- filepath: /c:/Users/lenovo/Desktop/security-project/Django/templates/home/index.html -->
+{% extends "base.html" %}
+{% block content %}
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -9,37 +11,12 @@
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
     <link href="https://fonts.googleapis.com/css2?family=Special+Elite&display=swap" rel="stylesheet">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
-    <style>
-        .navbar {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: #333;
-            padding: 10px 20px;
-        }
-        .navbar a {
-            color: white;
-            text-decoration: none;
-            padding: 14px 20px;
-            text-align: center;
-        }
-        .navbar a:hover {
-            background-color: #ddd;
-            color: black;
-        }
-    </style>
+
 </head>
 <body>
-    <div class="navbar">
-        <div class="logo">
-            <img src="Johnson-removebg-preview.png" alt="Logo" style="height: 40px;">
-        </div>
-        <div class="nav-links">
-            <a href="/">Home</a>
-            <a href="/about">About</a>
-            <a href="/donation">Donation</a>
-        </div>
-    </div>
+    
+    
+
     <div class="container">
         <h1><i class="fas fa-lock"></i> Security Project <i class="fas fa-unlock"></i></h1>
         <p>Encrypt or decrypt text and make Your conversation safe </p>
@@ -61,3 +38,4 @@
     </div>
 </body>
 </html>
+{% endblock content %}
