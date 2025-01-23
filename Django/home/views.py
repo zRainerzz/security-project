@@ -9,5 +9,3 @@ def home(request):
 
 
 
-def about(request):
-    return HttpResponse('''<h1>About page not configured, Does it even matter?</h1><h2>You came for the cryptic message, didn't you?</h2>''')

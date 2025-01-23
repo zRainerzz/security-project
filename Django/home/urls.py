@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path('', views.home, name='home_page'),  # This sets the home view as the root URL
-    path('about/', views.about, name='about_page'),
+
 ]
