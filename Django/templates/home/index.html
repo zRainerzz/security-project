@@ -1,4 +1,4 @@
-<!-- filepath: /c:/Users/lenovo/Desktop/security-project/Django/templates/home/index.html -->
+
 {% extends "base.html" %}
 {% block content %}
 {% load static %}
@@ -15,28 +15,28 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/js/all.min.js"></script>
 </head>
 <body>
-    
-  
     <div class="container">
         <h1><i class="fas fa-lock"></i> Security Project <i class="fas fa-unlock"></i></h1>
         <p>Encrypt or decrypt text and make Your conversation safe </p>
         
-        <div class="input-group">
-            <label for="text"><i class="fas fa-file-alt"></i> Text:</label>
-            <textarea id="text" placeholder="Enter text to process..."></textarea>
-        </div>
-        
-        <div class="input-group">
-            <label for="key"><i class="fas fa-key"></i> Key:</label>
-            <input type="text" id="key" placeholder="Enter encryption/decryption key...">
-        </div>
-        
-        <div class="button-group">
-            <button id="encrypt"><i class="fas fa-lock"></i> Encrypt</button>
-            <button id="decrypt"><i class="fas fa-unlock"></i> Decrypt</button>
-        </div>
+        <form method="post">
+            {% csrf_token %}
+            <div class="input-group">
+                <label for="text"><i class="fas fa-file-alt"></i> Text:</label>
+                {{ form.text }}
+            </div>
+            
+            <div class="input-group">
+                <label for="key"><i class="fas fa-key"></i> Key:</label>
+                <input type="text" id="key" placeholder="Enter encryption/decryption key...">
+            </div>
+            
+            <div class="button-group">
+                <button type="submit"><i class="fas fa-lock"></i> Encrypt</button>
+                <button type="submit"><i class="fas fa-unlock"></i> Decrypt</button>
+            </div>
+        </form>
     </div>
-
 {% endblock %}
 </body>
 </html>
